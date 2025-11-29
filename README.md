@@ -2,7 +2,7 @@
 
 A modern, secure, and user-friendly web application for generating and verifying cryptographic hashes using industry-standard algorithms. All processing happens entirely in your browser—your data never leaves your device.
 
-## 🎯 Features
+##  Features
 
 **HashSuite** provides a professional interface for working with four of the most secure and widely adopted cryptographic hash algorithms in the world today:
 
@@ -26,7 +26,7 @@ A modern, secure, and user-friendly web application for generating and verifying
 - **Client-Side Processing**: All cryptographic operations happen in your browser using Web Crypto API
 - **Zero Data Transmission**: No data is sent to any server—complete privacy and security
 
-## 🔒 Security & Privacy
+##  Security & Privacy
 
 HashSuite prioritizes security and privacy in every aspect:
 
@@ -36,7 +36,7 @@ HashSuite prioritizes security and privacy in every aspect:
 - **Open Source**: The source code is transparent and can be audited for security
 - **No Cookies or Tracking**: The application does not store any personal data or use tracking mechanisms
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -87,7 +87,7 @@ Preview the production build locally:
 pnpm preview
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 HashSuite/
@@ -116,7 +116,7 @@ HashSuite/
 └── README.md                # This file
 ```
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 HashSuite is built with modern, industry-standard technologies:
 
@@ -128,7 +128,7 @@ HashSuite is built with modern, industry-standard technologies:
 - **Web Crypto API**: Native browser API for cryptographic operations
 - **crypto-js**: Library for SHA3-256 and BLAKE2b algorithms
 
-## 📖 Usage Guide
+##  Usage Guide
 
 ### Generating a Hash
 
@@ -155,7 +155,7 @@ Each algorithm card displays important information:
 - **Use Case**: Common applications where this algorithm is used
 - **Description**: Detailed explanation of the algorithm and its characteristics
 
-## 🔐 Algorithm Details
+##  Algorithm Details
 
 ### SHA-256 (Secure Hash Algorithm 2, 256-bit)
 
@@ -181,7 +181,7 @@ BLAKE2b is a high-performance cryptographic hash function that is faster than MD
 
 **Use Cases**: High-performance hashing, file integrity verification, password hashing, real-time applications, content-addressable storage
 
-## ⚠️ Important Security Notes
+##  Important Security Notes
 
 ### Why Not SHA-1 or MD5?
 
@@ -197,7 +197,7 @@ SHA-1 and MD5 are **not included** in HashSuite because they are cryptographical
 3. **Verify Integrity**: Use hashes to verify data integrity by comparing hashes before and after transmission
 4. **Keep Algorithms Updated**: Stay informed about cryptographic research and update your systems accordingly
 
-## 🎨 Customization
+##  Customization
 
 ### Modifying Colors
 
@@ -216,7 +216,7 @@ To add additional hash algorithms:
 
 The application uses Tailwind CSS for styling. Modify component styles by editing the className attributes in React components. For global styles, edit `client/src/index.css`.
 
-## 📦 Building for Production
+##  Building for Production
 
 To create a production-ready build:
 
@@ -232,7 +232,7 @@ This command will:
 
 The production build can be deployed to any static hosting service (Vercel, Netlify, GitHub Pages, etc.).
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Port Already in Use
 
@@ -254,17 +254,17 @@ If you encounter build errors:
 2. Reinstall dependencies: `pnpm install`
 3. Try building again: `pnpm build`
 
-## 📝 License
+##  License
 
 This project is provided as-is for educational and professional use. Feel free to modify and distribute as needed.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! If you find bugs or have suggestions for improvements, please feel free to submit issues or pull requests.
 
 ## 📞 Support
 
-For issues, questions, or suggestions, please refer to the project documentation or contact the development team.
+For issues, questions, or suggestions, please refer to the project documentation or contact with me.
 
 ---
 
