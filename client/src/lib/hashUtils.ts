@@ -3,8 +3,10 @@
  * All operations are performed client-side using Web Crypto API and crypto-js
  */
 
-import CryptoJS from 'crypto-js';
-import { createHash } from 'blake2';
+import SHA3 from "crypto-js/sha3";
+import encHex from "crypto-js/enc-hex";
+import { blake2b } from "blakejs";
+
 
 export type HashAlgorithm = 'SHA-256' | 'SHA-512' | 'SHA3-256' | 'BLAKE2b';
 
@@ -55,31 +57,34 @@ async function generateSHA512(input: string): Promise<string> {
 
 /**
  * Generate SHA3-256 hash using crypto-js
- * Note: Web Crypto API doesn't support SHA3, so we use crypto-js
  */
 function generateSHA3256(input: string): string {
   try {
-    const hash = CryptoJS.SHA3(input, { outputLength: 256 });
-    return hash.toString();
+    const hash = SHA3(input, { outputLength: 256 });
+    return hash.toString(encHex);
   } catch (error) {
-    throw new Error(`Failed to generate SHA3-256 hash: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    throw new Error(
+      `Failed to generate SHA3-256 hash: ${error instanceof Error ? error.message : "Unknown error"
+      }`
+    );
   }
 }
 
 /**
- * Generate BLAKE2b hash using blake2 library
- * Note: Web Crypto API doesn't support BLAKE2b, so we use blake2
+ * Generate BLAKE2b hash using blakejs (browser-safe)
  */
 function generateBLAKE2b(input: string): string {
   try {
-    // Create a BLAKE2b hash object with 64-byte (512-bit) output
-    const hash = createHash('blake2b', { digestLength: 64 });
-    // Update with input data (convert string to Buffer)
-    hash.update(Buffer.from(input, 'utf8'));
-    // Get the digest as hex string
-    return hash.digest('hex');
+    const encoded = new TextEncoder().encode(input);
+    const hash = blake2b(encoded, null, 64); // 64 bytes = 512-bit
+    return Array.from(hash)
+      .map((b) => b.toString(16).padStart(2, "0"))
+      .join("");
   } catch (error) {
-    throw new Error(`Failed to generate BLAKE2b hash: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    throw new Error(
+      `Failed to generate BLAKE2b hash: ${error instanceof Error ? error.message : "Unknown error"
+      }`
+    );
   }
 }
 
