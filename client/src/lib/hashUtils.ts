@@ -3,9 +3,8 @@
  * All operations are performed client-side using Web Crypto API and crypto-js
  */
 
-// Import crypto-js for algorithms not available in Web Crypto API
-// Note: crypto-js will be added to package.json dependencies
-declare const CryptoJS: any;
+import CryptoJS from 'crypto-js';
+import { createHash } from 'blake2';
 
 export type HashAlgorithm = 'SHA-256' | 'SHA-512' | 'SHA3-256' | 'BLAKE2b';
 
@@ -59,21 +58,29 @@ async function generateSHA512(input: string): Promise<string> {
  * Note: Web Crypto API doesn't support SHA3, so we use crypto-js
  */
 function generateSHA3256(input: string): string {
-  if (typeof CryptoJS === 'undefined') {
-    throw new Error('CryptoJS library is not loaded');
+  try {
+    const hash = CryptoJS.SHA3(input, { outputLength: 256 });
+    return hash.toString();
+  } catch (error) {
+    throw new Error(`Failed to generate SHA3-256 hash: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
-  return CryptoJS.SHA3(input, { outputLength: 256 }).toString();
 }
 
 /**
- * Generate BLAKE2b hash using crypto-js
- * Note: Web Crypto API doesn't support BLAKE2b, so we use crypto-js
+ * Generate BLAKE2b hash using blake2 library
+ * Note: Web Crypto API doesn't support BLAKE2b, so we use blake2
  */
 function generateBLAKE2b(input: string): string {
-  if (typeof CryptoJS === 'undefined') {
-    throw new Error('CryptoJS library is not loaded');
+  try {
+    // Create a BLAKE2b hash object with 64-byte (512-bit) output
+    const hash = createHash('blake2b', { digestLength: 64 });
+    // Update with input data (convert string to Buffer)
+    hash.update(Buffer.from(input, 'utf8'));
+    // Get the digest as hex string
+    return hash.digest('hex');
+  } catch (error) {
+    throw new Error(`Failed to generate BLAKE2b hash: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
-  return CryptoJS.BLAKE2b(input).toString();
 }
 
 /**
