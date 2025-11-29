@@ -271,3 +271,11 @@ For issues, questions, or suggestions, please refer to the project documentation
 **HashSuite** - Professional Hash Generation and Verification  
 Built with React, TypeScript, Tailwind CSS, and shadcn/ui  
 All processing happens in your browser • No data is sent to any server
+
+## Visual Representation
+**Hash Generation**
+<img width="1267" height="617" alt="Screenshot 2025-11-28 203750" src="https://github.com/user-attachments/assets/cc08136a-a979-470d-853a-d4b50edc6881" />
+**Generated Hash Verification**
+<img width="1265" height="614" alt="Screenshot 2025-11-28 203902" src="https://github.com/user-attachments/assets/67469001-6e7b-476a-aa68-83521ecbffd7" />
+**Change Generated Hash value then check can it verify correctly or not**
+<img width="1258" height="610" alt="Screenshot 2025-11-28 204016" src="https://github.com/user-attachments/assets/c50e9404-8905-421a-b971-e5f96e647549" />
