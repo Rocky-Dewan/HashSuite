@@ -164,15 +164,8 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Footer */}
-      {/* Footer */}
-      <footer className="mt-12">
-        <div
-          className="container py-6 text-center text-sm 
-               bg-blue/10 backdrop-blur-md 
-               border-t border-gray-200 
-               text-gray-800 shadow-lg"
-        >
+      <footer className="mt-12 glass-footer">
+        <div className="container py-6 text-center text-sm text-gray-800">
           <p>HashSuite © 2025 • All processing happens in your browser • No data is sent to any server</p>
           <p>
             Developed by
