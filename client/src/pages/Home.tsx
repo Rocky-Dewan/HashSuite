@@ -165,9 +165,21 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 mt-12">
-        <div className="container py-6 text-center text-sm text-muted-foreground">
+      {/* Footer */}
+      <footer className="mt-12">
+        <div
+          className="container py-6 text-center text-sm 
+               bg-blue/10 backdrop-blur-md 
+               border-t border-gray-200 
+               text-gray-800 shadow-lg"
+        >
           <p>HashSuite © 2025 • All processing happens in your browser • No data is sent to any server</p>
+          <p>
+            Developed by
+            <a href="https://github.com/Rocky-Dewan" className="text-blue-600 hover:text-blue-800 underline ml-1">
+              Rocky Dewan
+            </a>
+          </p>
         </div>
       </footer>
     </div>
