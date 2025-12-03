@@ -46,7 +46,7 @@ export default function Home() {
         <div className="mb-8 p-4 bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-900 rounded-lg flex gap-3">
           <Info className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
           <div className="text-sm text-blue-900 dark:text-blue-100">
-            <p className="font-semibold mb-1">🔒 Security & Privacy</p>
+            <p className="font-semibold mb-1">Security & Privacy</p>
             <p>
               HashSuite uses industry-standard cryptographic algorithms to generate and verify hashes. All processing is done entirely in your browser using the Web Crypto API. No data is sent to any server, ensuring complete privacy and security.
             </p>
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="font-semibold mb-2 flex items-center gap-2">
-                <span>✨</span> SHA3-256
+                <span>🔏</span>SHA3-256
               </h3>
               <p className="text-muted-foreground">
                 The newest member of the SHA family, approved by NIST as a standard. Offers different design principles and is considered resistant to potential future attacks on SHA-2.
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="font-semibold mb-2 flex items-center gap-2">
-                <span>⚡</span> BLAKE2b
+                <span>🔒</span> BLAKE2b
               </h3>
               <p className="text-muted-foreground">
                 A high-performance cryptographic hash function that is faster than MD5, SHA-2, and SHA-3 while being at least as secure as SHA-3. Ideal for performance-critical applications.
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="font-semibold mb-2 flex items-center gap-2">
-                <span>🛡️</span> Why These Algorithms?
+                <span>🤷‍♂️</span> Why These Algorithms?
               </h3>
               <p className="text-muted-foreground">
                 We selected only the most secure and widely adopted algorithms. SHA-1 and MD5 are excluded as they are cryptographically broken and should not be used for further use.
