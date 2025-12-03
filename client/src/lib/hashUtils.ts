@@ -184,7 +184,7 @@ export const ALGORITHM_INFO: Record<HashAlgorithm, AlgorithmInfo> = {
     securityLevel: 'Excellent',
     useCase: 'Modern cryptographic applications, quantum-resistant hashing, NIST standard',
     color: 'green',
-    icon: '✨',
+    icon: '🔏',
   },
   'BLAKE2b': {
     name: 'BLAKE2b',
@@ -194,7 +194,7 @@ export const ALGORITHM_INFO: Record<HashAlgorithm, AlgorithmInfo> = {
     securityLevel: 'Excellent',
     useCase: 'High-performance hashing, file integrity, password hashing, real-time applications',
     color: 'orange',
-    icon: '⚡',
+    icon: '🔒',
   },
 };
 
