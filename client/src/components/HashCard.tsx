@@ -211,7 +211,7 @@ export function HashCard({
                   )}
                   <div className="flex-1">
                     <p className={`font-semibold ${verificationResult.isMatch ? 'text-green-700 dark:text-green-300' : 'text-red-700 dark:text-red-300'}`}>
-                      {verificationResult.isMatch ? '✓ Hash Match!' : '✗ Hash Mismatch'}
+                      {verificationResult.isMatch ? 'Hash Match!' : 'Hash Mismatch'}
                     </p>
                     <p className={`text-sm mt-1 ${verificationResult.isMatch ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
                       {verificationResult.isMatch
