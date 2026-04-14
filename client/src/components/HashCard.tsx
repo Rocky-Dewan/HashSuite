@@ -218,12 +218,7 @@ export function HashCard({
                         ? 'The provided hash matches the computed hash of the input text.'
                         : 'The provided hash does not match the computed hash of the input text.'}
                     </p>
-                    <div className="mt-3 space-y-1">
-                      <div className="flex gap-2">
-                        <span className="text-xs text-muted-foreground">Computed:</span>
-                        <code className="text-xs font-mono flex-1 break-all">{verificationResult.computedHash}</code>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </div>
