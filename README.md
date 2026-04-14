@@ -2,15 +2,16 @@
 
 ## Visual Representation
 **Hash Generation**
-![WhatsApp Image 2025-12-03 at 13 00 29_4ccc5b87](https://github.com/user-attachments/assets/3586329b-22d8-4bee-b0ac-bf6fde5d0783)
+<img width="2528" height="1216" alt="image" src="https://github.com/user-attachments/assets/87411144-ece2-4aee-9d56-11969e8a7846" />
+
 
 **Generated Hash Verification**
-![WhatsApp Image 2025-12-03 at 13 06 05_a6510643](https://github.com/user-attachments/assets/cdd7f097-f732-467a-91d0-ded998c8ead5)
+<img width="2519" height="1237" alt="image" src="https://github.com/user-attachments/assets/d63c6076-44d6-4836-af9e-e30bee8fcb26" />
+
 
 **Change Generated Hash value then check can it verify correctly or not**
-![WhatsApp Image 2025-12-03 at 13 03 49_32e8530a](https://github.com/user-attachments/assets/d8cb2376-8709-4dab-993a-fb3f29748a59)
-**Try SHA 512 Hash Algorithm**
-![WhatsApp Image 2025-12-03 at 13 05 08_bf584af4](https://github.com/user-attachments/assets/e585811a-9750-4f97-a6c2-a2cfc9d6df32)
+<img width="1757" height="1215" alt="image" src="https://github.com/user-attachments/assets/16e0b0a0-9b58-4072-b456-131fee51ebcc" />
+
 
 
 A modern, secure, and user-friendly web application for generating and verifying cryptographic hashes using industry-standard algorithms. All processing happens entirely in your browser—your data never leaves your device.
